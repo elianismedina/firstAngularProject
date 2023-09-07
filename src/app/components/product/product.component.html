@@ -2,11 +2,12 @@
 
   <h2>{{ product.title }}</h2>
   <p>{{ product.price }}</p>
-  <img [src]="product.images[0]" alt="">
+  <img [ngSrc]="product.images[0]" width="640" height="480" alt=""/>
 
 </ng-container>
+
 <ng-container *ngIf="!product">
+
   producto no renderizado
+
 </ng-container>
-
-
